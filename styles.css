@@ -84,8 +84,8 @@ body {
 .game-comment {
   position: fixed;
   left: 50%;
-  bottom: -110px;
-  width: 70px;
+  bottom: -11rem;
+  width: 7rem;
   margin-left: -500px;
 }
 
@@ -95,13 +95,13 @@ body {
 
 @keyframes pop {
   0% {
-    bottom: -110px;
+    bottom: -11rem;
   }
   30% {
-    bottom: -5px;
+    bottom: -0.5rem;
   }
   100% {
-    bottom: -110px;
+    bottom: -11rem;
   }
 }
 
@@ -111,11 +111,11 @@ body {
 
 .game-comment figcaption {
   position: absolute;
-  top: -35px;
+  top: -3.5rem;
   left: 0;
-  padding: 2px;
-  width: 95px;
-  border-radius: 3px;
+  padding: 0.2rem;
+  width: 9.5rem;
+  border-radius: 0.3rem;
   text-align: center;
   background-color: #fff;
 }
@@ -123,14 +123,14 @@ body {
 .game-comment figcaption::before {
   display: block;
   content: "";
-  border-width: 10px 5px 0 5px;
+  border-width: 1rem 0.5rem 0 0.5rem;
   border-color: #fff transparent transparent transparent;
   border-style: solid;
   width: 0;
   height: 0;
   position: absolute;
-  left: 8px;
-  bottom: -10px;
+  left: 0.8rem;
+  bottom: -1rem;
 }
 
 .game-deco {
@@ -142,24 +142,24 @@ body {
 
 .icon-alien {
   position: absolute;
-  left: -200px;
+  left: -20rem;
   top: 50%;
-  width: 130px;
+  width: 13rem;
   transform: rotateZ(30deg);
   animation: 3s linear 1s infinite alternate slideAlien;
 }
 
 @keyframes slideAlien {
   0% {
-    left: -200px;
+    left: -20rem;
     top: 50%;
   }
   40% {
-    left: -50px;
+    left: -5rem;
     top: 40%;
   }
   100% {
-    left: -50px;
+    left: -5rem;
     top: 40%;
   }
 }
@@ -177,7 +177,7 @@ body {
 .icon-ufo {
   position: absolute;
   bottom: 15%;
-  width: 60px;
+  width: 6rem;
   animation: 5s linear 0s infinite slideUfo;
 }
 
@@ -196,7 +196,7 @@ body {
 .icon-alien2 {
   position: absolute;
   bottom: 0;
-  width: 40px;
+  width: 4rem;
   animation: 5s linear 0s infinite slideAlien2;
 }
 
@@ -235,7 +235,7 @@ body {
   margin-bottom: 3rem;
   font-size: 5rem;
   font-weight: normal;
-  text-shadow: 1px 1px 3px #f0c419;
+  text-shadow: 0.1rem 0.1rem 0.3rem #f0c419;
 }
 
 .btn {
@@ -251,7 +251,7 @@ body {
 }
 
 .btn:active {
-  top: 2px;
+  top: 0.2rem;
 }
 
 .showing {
@@ -268,5 +268,13 @@ body {
     grid-gap: 5px;
     grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(4, 100px);
+  }
+
+  .game-comment {
+    margin-left: 0;
+  }
+
+  .game-deco2 {
+    display: none;
   }
 }
